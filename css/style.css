@@ -1,0 +1,47 @@
+
+#home {
+  background-image: url("https://github.com/kthhrnn/Images/blob/main/Background.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center; /* biar teks rata tengah */
+}
+
+.logo {
+    height: 80px;
+    background-color: lightblue;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url("https://github.com/kthhrnn/Images/blob/main/Logo%20Luna%20Beauty%20Skincare.png?raw=true");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header {
+    display: flex;                 /* jadikan baris horizontal */
+    justify-content: space-between; /* logo kiri, menu kanan */
+    align-items: center;           /* rata tengah secara vertikal */
+    padding: 20px;                 /* jarak tepi */
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* pastikan header nempel ke atas */
+header {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 40px;   /* kalau mau jarak kiri */
+  padding-right: 40px;  /* kalau mau jarak kanan */
+}
+
+/* reset margin/padding bawaan ul */
+header ul {
+  margin: 0;
+  padding: 0;
+}

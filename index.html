@@ -1,25 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Katherine</title>
-    
+
     <!-- CSS External -->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 
 <body>
     <!-- Header Content -->
-    <header></header>
+    <header class="main-header bg-pink-300 text-white flex justify-between items-center px-6 py-3">
+        <!-- Logo Website -->
+        <div class="logo font-bold text-lg">
+
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="flex h-[100%] items-center gap-[2px]">
+                <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
+                <li><a class="border p-[8px] rounded" href="#our-profile">Our Profile</a></li>
+                <li><a class="border p-[8px] rounded" href="#portofolio">Portofolio</a></li>
+                <li><a class="border p-[8px] rounded" href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
 
     <!-- Main Content -->
-    <main></main>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-[100vh] flex flex-col justify-center items-center">
+            <h1 class="text-[36px] font-bold text-pink-600">
+                Welcome <span id="username"></span> To Luna Beauty Skincare
+            </h1>
+            <p class="text-[18px]">Temukan rahasia kulit sehat dan bercahaya alami bersama kami 🌸</p>
+
+        </section>
+
+        <hr>
+
+        <!-- Profil Section -->
+        <section id="our-profile"
+            class="min-h-[100vh] flex flex-col justify-start items-center px-6 py-12 bg-pink-50 px-8 py-10">
+            <!-- Judul -->
+            <h1 class="text-[36px] font-bold mb-4 text-pink-600">Welcome To Our Profile</h1>
+
+            <!-- Deskripsi singkat -->
+            <p class="text-[18px] text-gray-700 max-w-2xl text-center mb-12">
+                Luna Beauty Skincare berdiri sejak tahun 2020 dengan misi menghadirkan produk perawatan kulit
+                yang aman, halal, dan ramah lingkungan 🌱. Kami percaya setiap wanita berhak tampil percaya diri
+                dengan kulit sehat alaminya.
+            </p>
+
+            <!-- Kotak Visi dan Misi -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
+                <!-- Kotak Visi -->
+                <div class="bg-pink-100 p-6 rounded-2xl shadow-md">
+                    <h2 class="text-2xl font-bold text-pink-600 mb-3">Visi</h2>
+                    <p class="text-gray-700">
+                        Menjadi brand skincare lokal yang terpercaya dan terdepan dalam menghadirkan solusi
+                        perawatan kulit alami, sehat, dan berkelanjutan 🌸.
+                    </p>
+                </div>
+
+                <!-- Kotak Misi -->
+                <div class="bg-pink-100 p-6 rounded-2xl shadow-md">
+                    <h2 class="text-2xl font-bold text-pink-600 mb-3">Misi</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Menggunakan bahan alami, halal, dan ramah lingkungan.</li>
+                        <li>Mengedepankan kualitas dan keamanan produk.</li>
+                        <li>Mendukung kepercayaan diri setiap wanita Indonesia.</li>
+                        <li>Berinovasi dengan teknologi terkini untuk hasil terbaik.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <hr>
+
+        <!-- Portofolio Section -->
+        <section id="portofolio" class="min-h-[100vh] flex flex-col justify-start items-center bg-pink-50 px-8 py-10">
+            <h1 class="text-[36px] font-bold text-pink-600 mt-10">Produk Unggulan Kami</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://github.com/kthhrnn/Images/blob/main/Luna%20Glow%20Serum.png?raw=true"
+                        class="w-full rounded-lg mb-4">
+                    <h2 class="font-bold text-lg text-pink-500">Luna Glow Serum</h2>
+                    <p class="text-gray-600 text-sm">Serum dengan vitamin C untuk kulit lebih cerah alami.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://github.com/kthhrnn/Images/blob/main/Luna%20Hydrating%20Toner.png?raw=true"
+                        class="w-full rounded-lg mb-4">
+                    <h2 class="font-bold text-lg text-pink-500">Luna Hydrating Toner</h2>
+                    <p class="text-gray-600 text-sm">Melembapkan kulit dengan kandungan aloe vera alami.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://github.com/kthhrnn/Images/blob/main/Luna%20Daily%20Cream.png?raw=true"
+                        class="w-full rounded-lg mb-4">
+                    <h2 class="font-bold text-lg text-pink-500">Luna Daily Cream</h2>
+                    <p class="text-gray-600 text-sm">Krim siang dengan SPF 30 untuk melindungi kulitmu.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Message Us Section -->
+        <section id="message-us" class="min-h-[100vh] flex flex-col justify-center items-center bg-pink-50 px-8 py-10">
+            <h2 class="text-[35px] font-bold text-pink-600 mt-6 mb-3">Message Us</h2>
+
+            <!-- Paragraf deskripsi -->
+            <p class="text-gray-700 text-center max-w-lg mb-8">
+                Silakan kirim pesan kepada kami untuk konsultasi seputar skincare maupun melakukan pemesanan produk 🌸.
+            </p>
+
+            <form>
+                <div class="flex items-center mb-4">
+                    <label for="name" class="w-24">Name</label>
+                    <input type="text" id="name" name="name" class="flex-1 border p-2 rounded">
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <label for="email" class="w-24">Email</label>
+                    <input type="email" id="email" name="email" class="flex-1 border p-2 rounded">
+                </div>
+
+                <div class="flex items-start mb-4">
+                    <label for="message" class="w-24 mt-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="flex-1 border p-2 rounded"></textarea>
+                </div>
+
+                <button type="button" onclick="validateForm()" class="bg-pink-500 text-white px-4 py-2 rounded">
+                    Submit
+                </button>
+            </form>
+        </section>
+    </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer>
+        <p class="text-center p-[20px] bg-pink-200"> @2025 By Katherine</p>
+    </footer>
     <!-- JavaScript External -->
     <script src="js\script.js"></script>
 </body>
+
 </html>
