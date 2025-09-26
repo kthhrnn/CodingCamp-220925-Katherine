@@ -1,4 +1,4 @@
-// welcomeMessage();
+welcomeMessage();
 
 function welcomeMessage() {
     let username = prompt("Enter your name:");
@@ -24,7 +24,7 @@ function validateForm() {
     } else {
         // Update tulisan di home
         document.getElementById("username").textContent = name;
-        
+
         // If all fields are filled, show a succes message
         alert(`Thanks, ${name}! Form submitted succesfully`);
     }
