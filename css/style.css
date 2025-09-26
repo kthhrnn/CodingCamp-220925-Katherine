@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center; /* biar teks rata tengah */
+  text-align: center; 
 }
 
 .logo {
@@ -17,30 +17,46 @@
 }
 
 .main-header {
-    display: flex;                 /* jadikan baris horizontal */
-    justify-content: space-between; /* logo kiri, menu kanan */
-    align-items: center;           /* rata tengah secara vertikal */
-    padding: 20px;                 /* jarak tepi */
+    display: flex;                 
+    justify-content: space-between;
+    align-items: center;           
+    padding: 20px;                
 }
-
-
 
 html, body {
   margin: 0;
   padding: 0;
 }
 
-/* pastikan header nempel ke atas */
 header {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 40px;   /* kalau mau jarak kiri */
-  padding-right: 40px;  /* kalau mau jarak kanan */
+  padding-left: 40px;   
+  padding-right: 40px;  
 }
 
-/* reset margin/padding bawaan ul */
 header ul {
   margin: 0;
   padding: 0;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Responsive untuk layar HP  */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;  
+    align-items: center;
+    text-align: center;
+  }
+
+  header ul {
+    flex-direction: column;  
+    margin-top: 10px;
+  }
 }
