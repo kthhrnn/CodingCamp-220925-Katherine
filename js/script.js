@@ -4,9 +4,9 @@ function welcomeMessage() {
     let username = prompt("Enter your name:");
     if (username) {
         document.getElementById("username").textContent = username;
-        alert(`Welcome to my portofolio, ${username}!`);
+        alert(`Welcome to my Website, ${username}!`);
     } else {
-        alert("Welcome to my portofolio!");
+        alert("Welcome to my Website!");
     }
 }
 
